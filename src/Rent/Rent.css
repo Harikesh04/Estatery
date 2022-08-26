@@ -1,0 +1,167 @@
+.homeheading{
+  
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 1.4vmax;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2vmax auto;
+    width: 80vw;
+    justify-content: center;
+    max-width: 100%;
+}
+.propertycard{
+    width: 18vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin:2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    overflow: hidden;
+
+}
+.propertycard>img{
+    width: 100%;
+
+}
+.propertycard>p{
+    font-family: "Roboto";
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+}
+.propertybox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.propertybox p{
+    font: 0.8vmax "Roboto";
+}
+.propertycard span{
+    margin:0.5vmax;  
+    color: tomato;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vmax;
+}
+
+.propertycard:hover{
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.521);
+    transform: translateY(-1vmax);
+}
+.homeheading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchcontainer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.filterBox {
+    width: 7vmax;
+   
+    
+  }
+  .pricebar{
+    margin: 1vmax;
+  }
+
+  .searchbox2{
+    padding: 0.3vmax;
+    width: 8vmax;
+    margin: 1vmax auto;
+    outline: none;
+    font-family: "Segoe UI", Tahoma, Geneva;
+    background-color: #ebf3f3;
+    border-radius: 4px;
+    border-color: #ebf3f3;
+    cursor: pointer;
+  
+  }
+
+  .searchbox1{
+    padding: 0.5vmax;
+    width: 13vmax;
+    margin: 2vmax auto;
+    outline: none;
+    font-family: "Segoe UI", Tahoma, Geneva;
+    background-color: #ebf3f3;
+    border-radius: 4px;
+    border-color: #ebf3f3;
+    cursor: pointer;
+  }
+ 
+  @media screen and (max-width:600px) {
+
+
+
+    .searchcontainer2{
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.searchbox1{
+    width: 20vmax;
+    padding: 0.6vmax;
+    font-size: 2vmax;
+}
+.searchbox2{
+    width: 17vmax;
+    padding: 0.6vmax;
+    font-size: 2vmax;
+
+}
+
+.filterBox {
+    width: 15vmax;
+   
+    
+  }
+  .pricebar{
+    margin:auto;
+  }
+
+  .homeheading{
+  
+   
+    font-size: 4vmax;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    width: 80%;
+    padding: 1vmax;
+    margin-top: 2vmax;
+    margin-bottom: 3vmax;
+
+}
+.propertybox p{
+    font: 1.3vmax "Roboto";
+}
+.propertycard>p{
+    margin: auto;
+   
+    font-size: 1.6vmax;
+    
+}
+.propertycard>span{
+ font-size: 2vmax;
+}
+.propertycard>h2{
+ font-size: 3vmax;
+}
+
+
+  }
