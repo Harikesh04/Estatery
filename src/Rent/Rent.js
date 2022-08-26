@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import PropertyCard from "./PropertyCard.js";
-import { FcSearch } from "react-icons/fc";
+
 import Typography from "@material-ui/core/Typography";
 import { Slider } from "@material-ui/core";
 import data from "../data/data.js";
@@ -25,8 +25,8 @@ const Rent = () => {
           .includes(sfilter.toString().toLowerCase())
       );
     })
-    .filter((x) => x.location == (location == "" ? x.location : location))
-    .filter((y) => y.type == (type == "" ? y.type : type))
+    .filter((x) => x.location === (location === "" ? x.location : location))
+    .filter((y) => y.type === (type === "" ? y.type : type))
     .filter((x) => x.price >= cost[0] && x.price <= cost[1]);
 
   return (
