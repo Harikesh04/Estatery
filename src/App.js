@@ -9,7 +9,7 @@ function App() {
     <Header/>
 
     <Routes>
-    <Route exact path="/rent" element={<Rent />} />
+    <Route exact path="/" element={<Rent />} />
     
     
     </Routes>

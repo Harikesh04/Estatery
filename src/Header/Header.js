@@ -1,5 +1,5 @@
 import React from "react";
-import { Link ,NavLink} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BsFillHouseFill } from "react-icons/bs";
 import "./Header.css"
 
@@ -11,18 +11,18 @@ const Header = () => {
       </div>
       
       <div className="midheader">
-        <NavLink className="navlinks" to="/rent" activeClassName="active-link">
+        <Link className="navlinks" to="/" >
           Rent
-        </NavLink>
-        <NavLink className="navlinks" to="/buy" activeClassName="active-link">
+        </Link>
+        <Link className="navlinks" to="/buy" >
           Buy
-        </NavLink>
-        <NavLink className="navlinks" to="/sell" activeClassName="active-link">
+        </Link>
+        <Link className="navlinks" to="/sell" >
           Sell
-        </NavLink>
-        <NavLink className="navlinks" to="/products" activeClassName="active-link">
+        </Link>
+        <Link className="navlinks" to="/products" >
           Manage Products
-        </NavLink>
+        </Link>
       </div>
       <div className="endheader">
       <Link className="btn" to="/">
